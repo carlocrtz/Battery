@@ -31,9 +31,7 @@ var app = {
         this.receivedEvent('deviceready');
     },
 
-	function onBatteryStatus(info) { 
-   alert("BATTERY STATUS:  Level: " + info.level + " isPlugged: " + info.isPlugged); 
-}
+
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
@@ -47,4 +45,7 @@ var app = {
     }
 };
 
+	function onBatteryStatus(info) { 
+   alert("BATTERY STATUS:  Level: " + info.level + " isPlugged: " + info.isPlugged); 
+}
 app.initialize();
